@@ -1,0 +1,127 @@
+/* Reset Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: 0;
+    outline: none;
+    list-style-type: none;
+}
+/* color variables */
+:root{
+    --color-dark: rgb(14, 14, 14);
+    --color-dark2: rgb(32, 32, 32);
+    --color-dark3: rgb(22, 22, 22);
+    --color-white: #FFF;
+    --color-green: rgb(103, 195, 80);
+    --color-green2: rgb(51, 149, 26);
+    --color-red: rgb(184, 40, 35);
+    --color-red2: rgb(146, 22, 17);
+}
+
+body{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    font-family: 'Lato';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+h1{
+    margin-top: 20px;
+    padding: 15px;
+}
+.content--add-item{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap
+}
+#input-new-task, #btn-new-task{
+    border: none;
+    font-size: 1em;
+    padding: 1em;
+}
+#input-new-task{
+    width: 20em;
+    border-radius: 0.6em;
+}
+#btn-new-task{
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-dark2);
+    color: var(--color-white);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .4s;
+}
+#btn-new-task:hover{
+    background-color: var(--color-dark3);
+
+}
+.btn-options{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.content--list-task li{
+    gap: 1em;
+    padding: 1em;
+    font-size: 1em;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content--list-task li:hover{
+    /* background-color: var(--color-dark3); */
+    transition: 4.s;
+    border-radius: 1.2em;
+    padding-left: 1em;
+}
+/* .content--list-task button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+#btn-ok, #btn-del{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    color: var(--color-white);
+    transition: .4s;
+    cursor: pointer;
+}
+#btn-ok:hover, #btn-del:hover {
+    transition: .4s;
+    opacity: .5;    
+}
+#btn-ok{
+    /* border: 1px solid red; */
+    background-color: var(--color-green);
+    color: var(--color-dark2);  
+}
+#btn-del{
+    width: 2em;
+    height: 2em;
+    background-color: var(--color-red);
+}
+.concluido {    
+    background-color: var(--color-green);
+    text-decoration: line-through;
+    border-radius: 1.2em;
+    color: var(--color-dark);
+}
+.concluido:hover{
+    background-color: var(--color-green2);
+    text-decoration: line-through;
+    border-radius: 1.2em;
+}
