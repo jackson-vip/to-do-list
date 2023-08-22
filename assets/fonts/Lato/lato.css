@@ -2,7 +2,3 @@
     font-family: 'Lato';
     src: url('./Lato-Regular.ttf') format(woff2);
 }
-@font-face {
-    font-family: 'Nanum_Myeongjo';
-    src: url(../Nanum_Myeongjo/NanumMyeongjo-Regular.ttf) format(woff2);
-}
